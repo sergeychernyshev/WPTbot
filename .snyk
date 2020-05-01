@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.10.1
+version: v1.14.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:growl:20160721':
@@ -11,3 +11,10 @@ patch:
   'npm:debug:20170905':
     - webpagetest > mocha > debug:
         patched: '2018-02-06T23:40:12.051Z'
+  SNYK-JS-LODASH-567746:
+    - snyk > inquirer > lodash:
+        patched: '2020-05-01T08:51:07.348Z'
+    - snyk > snyk-resolve-deps > lodash:
+        patched: '2020-05-01T08:51:07.348Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-05-01T08:51:07.348Z'
